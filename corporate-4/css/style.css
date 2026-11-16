@@ -641,3 +641,11 @@ body.menu-open { overflow: hidden; }
 }
 .mm-sub a { justify-content: flex-start !important; gap: .4rem; }
 .eyebrow { white-space: nowrap; padding-inline: 1.8rem; }
+
+/* desktop: logo exactly centred in the top bar */
+@media (min-width: 961px) {
+  .topbar { display: grid; grid-template-columns: 1fr auto 1fr; }
+  .topbar > .tb-group:first-child { justify-self: start; }
+  .topbar > .logo { justify-self: center; }
+  .topbar > .tb-group:last-child { justify-self: end; }
+}
