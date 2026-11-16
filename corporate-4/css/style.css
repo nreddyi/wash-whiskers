@@ -514,3 +514,57 @@ html, body { overflow-x: clip; max-width: 100%; }
   .counter strong { font-size: 2.1rem; }
   .counter span { font-size: .85rem; line-height: 1.35; display: block; }
 }
+
+/* =========================================================
+   Sticky header + hamburger menu
+   ========================================================= */
+.sticky-nav { padding: .65rem 2rem; }
+.burger { display: none; width: 46px; height: 46px; border-radius: 50%; border: 0; background: var(--blue); cursor: pointer; place-items: center; flex: none; transition: background .3s, transform .3s; }
+.burger:hover { background: var(--pink); transform: scale(1.05); }
+.burger span, .burger span::before, .burger span::after { display: block; width: 20px; height: 2px; border-radius: 2px; background: #fff; position: relative; content: ""; }
+.burger span::before { position: absolute; top: -6px; }
+.burger span::after { position: absolute; top: 6px; width: 14px; }
+.sticky-nav .burger { background: #fff; }
+.sticky-nav .burger span, .sticky-nav .burger span::before, .sticky-nav .burger span::after { background: var(--blue); }
+.sticky-nav .burger:hover { background: var(--teal); }
+.sticky-nav .burger:hover span, .sticky-nav .burger:hover span::before, .sticky-nav .burger:hover span::after { background: #fff; }
+
+.mmenu { position: fixed; inset: 0; z-index: 100; visibility: hidden; transition: visibility 0s .45s; }
+.mmenu.open { visibility: visible; transition: none; }
+.mm-ov { position: absolute; inset: 0; background: rgba(25, 32, 40, .55); opacity: 0; transition: opacity .4s; }
+.mmenu.open .mm-ov { opacity: 1; }
+.mm-panel { position: absolute; top: 0; right: 0; bottom: 0; width: min(360px, 88vw); background: var(--blue) url("../images/swirl.svg") center / cover; color: rgba(255, 255, 255, .8); padding: 1.3rem 1.5rem 2rem; display: flex; flex-direction: column; overflow-y: auto; transform: translateX(100%); transition: transform .45s cubic-bezier(.2, .7, .2, 1); border-radius: 26px 0 0 26px; }
+.mmenu.open .mm-panel { transform: none; }
+.mm-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.8rem; }
+.mm-top .logo b { color: #fff; font-size: 1.4rem; }
+.mm-top .logo img { width: 38px; }
+.mm-close { width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, .15); color: #fff; font-size: 1.1rem; cursor: pointer; transition: background .3s, transform .3s; }
+.mm-close:hover { background: var(--pink); transform: rotate(90deg); }
+.mm-links { list-style: none; }
+.mm-links li { border-bottom: 1px solid rgba(255, 255, 255, .12); opacity: 0; transform: translateX(30px); transition: opacity .4s, transform .4s; }
+.mmenu.open .mm-links li { opacity: 1; transform: none; }
+.mmenu.open .mm-links li:nth-child(1) { transition-delay: .1s; } .mmenu.open .mm-links li:nth-child(2) { transition-delay: .15s; }
+.mmenu.open .mm-links li:nth-child(3) { transition-delay: .2s; } .mmenu.open .mm-links li:nth-child(4) { transition-delay: .25s; }
+.mmenu.open .mm-links li:nth-child(5) { transition-delay: .3s; } .mmenu.open .mm-links li:nth-child(6) { transition-delay: .35s; }
+.mmenu.open .mm-links li:nth-child(7) { transition-delay: .4s; }
+.mm-links a { display: flex; justify-content: space-between; align-items: center; padding: .95rem .2rem; font-family: "Fredoka", sans-serif; font-weight: 600; font-size: 1.3rem; color: #fff; transition: color .25s, padding .25s; }
+.mm-links a i { font-style: normal; font-size: 1rem; opacity: .5; }
+.mm-links a:hover, .mm-links a.on { color: var(--teal); padding-left: .5rem; }
+.mm-links a.on i { opacity: 1; }
+.mm-info { margin-top: 1.6rem; }
+.mm-info .cb-row { border-color: rgba(255, 255, 255, .12); font-size: .92rem; }
+.mm-cta { margin-top: 1.6rem; justify-content: center; }
+body.menu-open { overflow: hidden; }
+
+@media (max-width: 960px) {
+  .burger { display: grid; }
+  .topbar .tb-cta { display: none; }
+  .hero > .pillnav, .page-hero > .pillnav { display: none; }
+  .sticky-nav { padding: .6rem 1rem; }
+  .sticky-nav .pillnav, .sticky-nav > .btn { display: none; }
+  .hero-copy { margin-top: 3rem; }
+  .ph-copy { margin-top: 3rem; }
+}
+@media (min-width: 961px) {
+  .mmenu { display: none; }
+}
