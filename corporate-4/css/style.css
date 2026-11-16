@@ -438,3 +438,79 @@ section[id] { scroll-margin-top: 90px; }
   .benefits, .posts.all { grid-template-columns: 1fr; }
   .ph-pet { display: none; }
 }
+
+/* =========================================================
+   Mobile fixes
+   ========================================================= */
+html, body { overflow-x: clip; max-width: 100%; }
+@media (max-width: 960px) {
+  .topbar { padding: .8rem 1rem; }
+  .topbar .tb-group:last-child .tb-item, .topbar .tb-group:last-child .tb-sep { display: none; }
+  .topbar .tb-group { gap: .6rem; }
+  .logo b { font-size: 1.45rem; }
+  .logo img { width: 40px; }
+  .reveal.r-left, .reveal.r-right { transform: translateY(40px); }
+  .reveal.r-left.in, .reveal.r-right.in { transform: none; }
+  .range-intro .img-wrap .am-badge { right: 0; top: -10px; width: 100px; }
+  .about-media .am-badge { right: 2%; width: 110px; }
+  .about-media .am-food { left: 0; width: 90px; }
+}
+@media (max-width: 640px) {
+  .hero { margin: 0 .5rem; border-radius: 26px; min-height: 0; padding-bottom: 250px; }
+  .page-hero { margin: 0 .5rem; border-radius: 26px; padding-bottom: 3.5rem; }
+  .pillnav { gap: .4rem; padding: 0 .6rem; }
+  .pillnav a { padding: .4rem .8rem; font-size: .8rem; }
+  .hero-copy { margin-top: 2.2rem; }
+  .hero h1 { font-size: 2.35rem; }
+  .hero p { font-size: .95rem; }
+  .hp-dog { width: 47%; height: 220px; left: 2%; border-width: 5px; }
+  .hp-cat { width: 47%; height: 210px; right: 2%; border-width: 5px; }
+  .hd-star, .hd-star2 { display: none; }
+  .ph-copy { margin-top: 2.4rem; }
+  .ph-copy h1 { font-size: 2.4rem; }
+  .about { gap: 3rem; }
+  .about-media { height: 380px; }
+  .h2 { font-size: 2rem; }
+  .about-copy h3 { font-size: 1.7rem; }
+  .ticker { margin: 0 -1rem; }
+  .tk-track span { font-size: 1.2rem; gap: 1.6rem; }
+  .band { height: 300px; }
+  .band .play { width: 130px; height: 130px; }
+  .band .band-text { left: 1.2rem; right: 1.2rem; bottom: 1.4rem; max-width: none; text-align: center; }
+  .band .band-text h3 { font-size: 1.5rem; }
+  .services { padding-bottom: 6rem; }
+  .pet-tabs label { padding: .6rem 1.1rem; font-size: .95rem; }
+  .svc-arrow { width: 42px; height: 42px; }
+  .svc-arrow.l { left: -6px; } .svc-arrow.r { right: -6px; }
+  .step .img { width: 160px; height: 160px; }
+  .step .no { left: calc(50% + 35px); }
+  .why-img .tag { font-size: .9rem; padding: .7rem 1.2rem; }
+  .cta-strip h3 { font-size: 1.5rem; }
+  .cta-strip .news-form { min-width: 0 !important; width: 100%; }
+  .testi-head .h2, .blog-head .h2 { font-size: 1.9rem; }
+  .partner { padding: 5rem 1rem 9rem; }
+  .partner h2 { font-size: 2rem; }
+  .partner .pet-l, .partner .pet-r { width: 110px; opacity: 1; }
+  .partner .dots { display: none; }
+  .contact-box { border-radius: 26px; }
+  .cb-info h3 { font-size: 1.9rem; }
+  .footer-wrap { margin: 7rem .5rem .5rem; }
+  .footer-wrap .peek { width: 130px; top: -90px; }
+  .footer { border-radius: 26px; padding-top: 3.5rem; }
+  .f-bot { flex-direction: column; text-align: center; align-items: center; }
+  .f-bot nav { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+  .detail .dbody { padding: 1.5rem 1.4rem; }
+  .faq summary { font-size: 1rem; }
+  .faq-side .blob { display: none; }
+  .counter strong { font-size: 2.5rem; }
+}
+@media (max-width: 640px) {
+  .pet-tabs { gap: .5rem; }
+  .pet-tabs label { white-space: nowrap; }
+  .pet-tabs label small { display: none; }
+  .counters { grid-template-columns: 1fr 1fr; gap: .9rem; }
+  .counter { padding: 1.5rem 1rem; }
+  .counter .ic { width: 46px; height: 46px; }
+  .counter strong { font-size: 2.1rem; }
+  .counter span { font-size: .85rem; line-height: 1.35; display: block; }
+}
