@@ -683,3 +683,20 @@ body.menu-open { overflow: hidden; }
 .mm-brands li a i { margin-left: auto; font-style: normal; color: var(--teal); }
 .mm-brands .bi { background: rgba(255, 255, 255, .15); }
 .mm-brands .cur-brand .bi { background: var(--teal); }
+
+/* group brands button now sits in the top bar (in place of the mail icon) */
+.topbar { position: relative; z-index: 40; }
+.brands { position: relative; }
+.topbar .brand-btn { width: 54px; height: 54px; }
+.topbar .brand-btn span, .topbar .brand-btn span::before, .topbar .brand-btn span::after { width: 20px; }
+.brands .brand-dd { top: calc(100% + 14px); right: 0; }
+.brands .brand-dd::before { content: ""; position: absolute; top: -8px; right: 18px; width: 16px; height: 16px; background: #fff; transform: rotate(45deg); border-radius: 3px; }
+.topbar .brands .brand-dd::before { right: 19px; }
+.sticky-nav { gap: 1rem; }
+.sticky-nav > .btn { margin-left: auto; }
+.sticky-nav .pillnav { margin-left: auto; }
+.sticky-nav .brands .brand-dd { top: calc(100% + 16px); }
+.sticky-nav .brands .brand-dd::before { right: 12px; }
+@media (max-width: 960px) {
+  .topbar .brands, .sticky-nav .brands { display: none; }
+}
