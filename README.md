@@ -6,7 +6,7 @@ Static HTML/CSS website for **Wash Whiskers**, a waterless, hand-safe and cruelt
 
 | Folder / file | Description |
 |---|---|
-| `corporate-4/` | **Newest** – playful royal-blue home page (Pawmate-style layout), dogs & cats only |
+| `corporate-4/` | **Newest** – playful royal-blue multi-page site (Home, About, Dog Care, Cat Care, How It Works, Guides, Contact), dogs & cats only |
 | `corporate-3/` | Warm corporate one-page with hero slider, testimonial slider, scroll animations and real photos (Unsplash) |
 | `corporate-2/` | Clean minimal corporate one-page (white & green) |
 | `corporate/` | Corporate one-page (navy & teal, tabbed product portfolio) |
