@@ -1,0 +1,119 @@
+/* =========================================================
+   Wash Whiskers — One-page version (loads after style.css)
+   ========================================================= */
+
+section[id], div[id] { scroll-margin-top: 150px; }
+#top { scroll-margin-top: 0; }
+
+/* sticky category jump bar */
+.op-jump { top: 80px; }
+.op-jump a .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+
+/* category blocks */
+.op-cat { padding: 2.2rem 0; }
+.op-block {
+  background: var(--c);
+  border-radius: 48px;
+  padding: 3.5rem 3.5rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.op-head {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 2rem;
+  align-items: end;
+}
+.op-head .eyebrow { background: rgba(255, 255, 255, .5); }
+.op-head h2 { font-size: clamp(2.4rem, 5vw, 4.2rem); margin: 1rem 0 1rem; }
+.op-head h2 em { color: var(--a); }
+.op-head .lead { max-width: 56ch; opacity: .85; }
+.op-head .hero-chips { margin-top: 1.4rem; }
+.op-art {
+  background: rgba(255, 255, 255, .45);
+  border-radius: 999px 999px 28px 28px;
+  aspect-ratio: 1 / 1.05;
+  display: grid;
+  place-items: end center;
+  overflow: hidden;
+}
+.op-art img { width: 92%; }
+
+.op-subs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-top: 2.6rem;
+}
+.op-sub {
+  background: var(--paper);
+  border-radius: 26px;
+  padding: 1.8rem 1.8rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+.op-sub:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.op-sub .idx { font-family: "Fraunces", Georgia, serif; font-style: italic; color: var(--a); font-size: .95rem; }
+.op-sub h3 { font-size: 1.65rem; margin: .3rem 0 .5rem; }
+.op-sub > p { color: var(--muted); font-size: .92rem; }
+.op-pts { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1rem 0 1.1rem; list-style: none; }
+.op-pts li { font-size: .74rem; background: var(--c); color: var(--ink); border-radius: 999px; padding: .25rem .7rem; }
+
+.op-prod {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .85rem 0;
+  border-top: 1px solid var(--line);
+}
+.op-prod .thumb {
+  width: 66px; height: 66px; flex: none;
+  border-radius: 18px;
+  background: var(--c);
+  display: grid; place-items: center;
+}
+.op-prod .thumb img { width: 66%; }
+.op-prod .info { flex: 1; min-width: 0; }
+.op-prod .info b { font-family: "Fraunces", Georgia, serif; font-weight: 400; font-size: 1.08rem; display: block; line-height: 1.2; }
+.op-prod .info small { color: var(--muted); font-size: .78rem; }
+.op-prod .price { font-size: 1.15rem; white-space: nowrap; }
+.op-prod .price s { font-size: .78rem; }
+.op-prod .btn-sm { padding: .5rem .95rem; font-size: .8rem; }
+
+/* about strip */
+.op-about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 4rem; align-items: center; }
+.op-about .arch { aspect-ratio: 1 / 1.1; background: var(--butter); display: grid; place-items: end center; }
+.op-about .arch img { width: 90%; }
+.op-about h2 { font-size: clamp(2.2rem, 4.2vw, 3.5rem); margin: 1rem 0 1.2rem; }
+.op-about p { color: var(--muted); margin-bottom: 1rem; }
+.op-about .values { grid-template-columns: repeat(2, 1fr); margin-top: 2rem; gap: 1rem; }
+.op-about .value { min-height: 170px; padding: 1.5rem; }
+.op-about .value .big { font-size: 2.2rem; }
+.op-about .value h4 { font-size: 1.2rem; }
+
+/* back to top */
+.to-top {
+  position: fixed; right: 1.4rem; bottom: 1.4rem; z-index: 70;
+  width: 52px; height: 52px; border-radius: 50%;
+  background: var(--ink); color: var(--cream);
+  display: grid; place-items: center;
+  text-decoration: none; font-size: 1.2rem;
+  box-shadow: var(--shadow);
+  transition: transform .3s ease, background .3s ease;
+}
+.to-top:hover { transform: translateY(-3px); background: var(--sage-deep); }
+
+@media (max-width: 960px) {
+  .op-block { padding: 2.4rem 1.6rem 2rem; border-radius: 36px; }
+  .op-head { grid-template-columns: 1fr; }
+  .op-art { max-width: 260px; }
+  .op-subs { grid-template-columns: 1fr; }
+  .op-about { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .op-prod { flex-wrap: wrap; }
+  .op-prod .info { flex-basis: calc(100% - 90px); }
+  .op-prod .price { margin-left: calc(66px + 1rem); flex: 1; }
+  .op-about .values { grid-template-columns: 1fr; }
+}
