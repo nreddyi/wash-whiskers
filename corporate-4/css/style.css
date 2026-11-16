@@ -568,3 +568,8 @@ body.menu-open { overflow: hidden; }
 @media (min-width: 961px) {
   .mmenu { display: none; }
 }
+
+/* remove torn zig-zag edge under the Care Ranges section */
+.services::after { display: none; content: none; }
+.services { padding-bottom: 7rem; }
+@media (max-width: 640px) { .services { padding-bottom: 5rem; } }
