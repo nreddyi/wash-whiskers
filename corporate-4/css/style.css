@@ -700,3 +700,27 @@ body.menu-open { overflow: hidden; }
 @media (max-width: 960px) {
   .topbar .brands, .sticky-nav .brands { display: none; }
 }
+
+/* "Our Group Brands" pill button (replaces the round hamburger) */
+.brand-pill { display: inline-flex; align-items: center; gap: .65rem; height: 52px; padding: 0 1.1rem 0 .4rem; border: 0; border-radius: 100px; cursor: pointer; background: linear-gradient(135deg, var(--pink), #C94BF0); color: #fff; font-family: "Fredoka", sans-serif; font-weight: 600; font-size: 1rem; white-space: nowrap; box-shadow: 0 12px 24px -12px rgba(255, 89, 219, .8); transition: transform .3s, box-shadow .3s, background .3s; }
+.brand-pill:hover { transform: translateY(-2px); box-shadow: 0 16px 28px -12px rgba(255, 89, 219, .9); }
+.bp-ic { width: 42px; height: 42px; border-radius: 50%; background: #fff; display: grid; place-items: center; flex: none; transition: transform .4s; }
+.bp-ic svg { width: 20px; height: 20px; fill: var(--pink); }
+.brand-pill:hover .bp-ic { transform: rotate(90deg); }
+.bp-caret { display: grid; place-items: center; }
+.bp-caret svg { width: 16px; height: 16px; fill: none; stroke: #fff; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s; }
+.brands.open .brand-pill { background: linear-gradient(135deg, var(--blue), #3A4FC7); box-shadow: 0 12px 24px -12px rgba(25, 45, 152, .8); }
+.brands.open .bp-ic svg { fill: var(--blue); }
+.brands.open .bp-caret svg { transform: rotate(180deg); }
+.brands .brand-dd::before { right: 28px; }
+.sticky-nav .brand-pill { height: 46px; font-size: .92rem; padding: 0 1rem 0 .35rem; }
+.sticky-nav .bp-ic { width: 36px; height: 36px; }
+.sticky-nav .bp-ic svg { width: 17px; height: 17px; }
+.sticky-nav .brands.open .brand-pill { background: #fff; color: var(--blue); }
+.sticky-nav .brands.open .bp-ic { background: var(--blue); }
+.sticky-nav .brands.open .bp-ic svg { fill: #fff; }
+.sticky-nav .brands.open .bp-caret svg { stroke: var(--blue); }
+@media (max-width: 1200px) and (min-width: 961px) {
+  .topbar > .tb-group:last-child .tb-item, .topbar > .tb-group:last-child .tb-sep { display: none; }
+  .sticky-nav > .btn { display: none; }
+}
