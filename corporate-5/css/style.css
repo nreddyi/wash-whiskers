@@ -770,3 +770,24 @@ body.menu-open { overflow: hidden; }
 .mm-brands h6 { color: var(--aqua); }
 .step .no { background: var(--pink); }
 .benefit .ic { background: #FFE6DC; color: var(--pink); }
+
+/* =========================================================
+   Bigger, clearer logo
+   ========================================================= */
+.topbar { padding-top: .7rem; padding-bottom: .7rem; }
+.topbar .logo-img { height: 96px; }
+.sticky-nav { padding-top: .5rem; padding-bottom: .5rem; }
+.sticky-nav .logo { padding: .35rem .7rem; border-radius: 16px; }
+.sticky-nav .logo-img { height: 58px; }
+.footer .logo { padding: .8rem 1.1rem; border-radius: 22px; }
+.footer .logo-img { height: 100px; }
+.mm-top .logo-img { height: 52px; }
+@media (max-width: 960px) {
+  .topbar .logo-img { height: 70px; }
+  .sticky-nav .logo-img { height: 50px; }
+}
+@media (max-width: 640px) {
+  .topbar .logo-img { height: 62px; }
+  .sticky-nav .logo-img { height: 46px; }
+  .footer .logo-img { height: 84px; }
+}
