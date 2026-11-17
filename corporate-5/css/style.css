@@ -770,6 +770,3 @@ body.menu-open { overflow: hidden; }
 .mm-brands h6 { color: var(--aqua); }
 .step .no { background: var(--pink); }
 .benefit .ic { background: #FFE6DC; color: var(--pink); }
-
-/* orange background for the tilted keyword strip */
-.ticker:not(.blue) { background: #FF8A3D; }
