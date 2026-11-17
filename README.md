@@ -6,7 +6,8 @@ Static HTML/CSS website for **Wash Whiskers**, a waterless, hand-safe and cruelt
 
 | Folder / file | Description |
 |---|---|
-| `corporate-5/` | **Latest** – same multi-page layout as corporate-4 with the final Wash & Whiskers logo and logo-based colours (deep teal, aqua, coral) |
+| `corporate-5/` | Same multi-page layout as corporate-4 with the final Wash & Whiskers logo and logo-based colours (deep teal, aqua, coral) |
+| `corporate-6/` | **Latest** – corporate-5 layout with the official brand guidelines (colours #00657C / #5CFFFB / #D2FFFD, Hobo · Aldine · Gotham type with web stand-ins) and real catalogue content: Pet Grooming & Pet Hygiene ranges, S Labs story and contact details |
 | `corporate-4/` | Royal-blue version – playful royal-blue multi-page site (Home, Our Story, Explore by Concern, Our Solutions, Categories → Dog Care / Cat Care, plus Guides & Contact), dogs & cats only |
 | `corporate-3/` | Warm corporate one-page with hero slider, testimonial slider, scroll animations and real photos (Unsplash) |
 | `corporate-2/` | Clean minimal corporate one-page (white & green) |
