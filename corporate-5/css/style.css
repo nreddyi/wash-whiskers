@@ -791,3 +791,8 @@ body.menu-open { overflow: hidden; }
   .sticky-nav .logo-img { height: 46px; }
   .footer .logo-img { height: 84px; }
 }
+
+/* taller sticky header */
+.sticky-nav { padding-top: 1rem; padding-bottom: 1rem; min-height: 92px; }
+.sticky-nav .logo-img { height: 62px; }
+@media (max-width: 960px) { .sticky-nav { padding-top: .8rem; padding-bottom: .8rem; min-height: 80px; } .sticky-nav .logo-img { height: 52px; } }
