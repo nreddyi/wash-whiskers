@@ -728,3 +728,20 @@ body.menu-open { overflow: hidden; }
 /* lighter "Our Brands" label */
 .brand-pill { font-weight: 500; }
 .brand-pill .bp-txt { font-weight: 500; letter-spacing: .01em; }
+
+/* =========================================================
+   Final Wash & Whiskers logo
+   ========================================================= */
+.logo-img { display: block; width: auto; height: 68px; }
+.topbar .logo-img { height: 70px; }
+.sticky-nav .logo { background: #fff; border-radius: 14px; padding: .3rem .55rem; }
+.sticky-nav .logo-img { height: 40px; }
+.mm-top .logo { background: #fff; border-radius: 14px; padding: .35rem .6rem; }
+.mm-top .logo-img { height: 40px; }
+.footer .logo { display: inline-flex; background: #fff; border-radius: 18px; padding: .6rem .9rem; }
+.footer .logo-img { height: 64px; }
+.bi-img { background: transparent !important; padding: 0; overflow: hidden; }
+.bi-img img { width: 100%; height: 100%; border-radius: 50%; }
+@media (max-width: 960px) { .topbar .logo-img { height: 54px; } }
+@media (max-width: 640px) { .topbar .logo-img { height: 48px; } .footer .logo-img { height: 54px; } }
+.logo img.logo-img, .sticky-nav .logo img.logo-img, .mm-top .logo img.logo-img, .footer .logo img.logo-img { width: auto !important; max-width: none; }
