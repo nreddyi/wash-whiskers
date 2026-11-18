@@ -983,3 +983,5 @@ h4, h5, .tb-item b, .counter span, .detail h3, .svc h5, .t-card h5, .post h4, .c
 @media (max-width: 560px) { .hwb-grid { grid-template-columns: 1fr 1fr; gap: .7rem; } .hwb-grid li { padding: 1rem .9rem; } .hwb-grid p { font-size: .8rem; } .br-grid { grid-template-columns: 1fr 1fr; gap: .7rem; } .br-card { padding: 1.4rem .8rem; } .br-mono { width: 60px; height: 60px; font-size: 1.15rem; } .br-card em { position: static; display: inline-block; margin-top: .6rem; } }
 .co-copy .btn, .partner .btn { white-space: nowrap; }
 @media (max-width: 560px) { .co-photo { aspect-ratio: 1 / 1; } .co-badge { right: .6rem; bottom: .6rem; padding: .6rem .9rem; border-radius: 16px; } .co-badge b { font-size: 1.15rem; } .co-badge span { font-size: .62rem; } }
+/* tickers: straight horizontal bands */
+.ticker, .ticker.blue { transform: none !important; margin: 0 !important; }
