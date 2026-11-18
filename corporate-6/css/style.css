@@ -1038,4 +1038,9 @@ h4, h5, .tb-item b, .counter span, .detail h3, .svc h5, .t-card h5, .post h4, .c
 /* tighter gap between products and care routine */
 .products { padding-bottom: 2.5rem; }
 .products .more-row { margin-top: 2rem; }
-#approach { padding-top: 3.5rem; }
+#approach { padding-top: 5rem; }
+/* care routine section: own background so it separates from the white products section */
+#approach { background: #DEEEF7; padding-bottom: 5.5rem; }
+#approach .steps-box { background: #fff; box-shadow: 0 30px 60px -40px rgba(0, 101, 124, .45); }
+#approach .step .img { border-color: #DEEEF7; }
+.products { padding-bottom: 4.5rem; }
