@@ -1017,3 +1017,16 @@ h4, h5, .tb-item b, .counter span, .detail h3, .svc h5, .t-card h5, .post h4, .c
 .band2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
 .band2 .bn-panel { min-width: 0; overflow: hidden; }
 @media (max-width: 1000px) { .band2 { grid-template-columns: minmax(0, 1fr); } }
+/* band panel: plain soft mint (brand primary #D2FFFD) */
+.band2 { background: var(--c-mint); }
+.band2 .bn-panel { background: var(--c-mint); color: var(--c-teal); }
+.band2 .bn-panel::after { border-color: rgba(0, 101, 124, .07); }
+.band2 h2 { color: var(--c-teal); }
+.band2 h2 em { color: var(--c-teal2); }
+.band2 .bn-panel > p { color: rgba(0, 101, 124, .82); }
+.bn-step { background: #fff; border: 1px solid rgba(0, 101, 124, .12); color: var(--c-teal); box-shadow: 0 10px 24px -18px rgba(0, 101, 124, .45); }
+.bn-step:hover { background: #fff; box-shadow: 0 18px 32px -18px rgba(0, 101, 124, .5); }
+.bn-img { background: #F2FFFE; border: 1px solid rgba(0, 101, 124, .08); }
+.bn-txt b { color: var(--c-teal); }
+.bn-txt small { color: rgba(0, 101, 124, .72); }
+.bn-play b { box-shadow: 0 8px 20px -10px rgba(0, 101, 124, .5); }
