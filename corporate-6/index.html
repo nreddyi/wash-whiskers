@@ -8,7 +8,7 @@
 <link rel="icon" href="images/favicon.png" type="image/png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=c6-11">
+<link rel="stylesheet" href="css/style.css?v=c6-12">
 </head>
 <body>
 
@@ -184,9 +184,9 @@
 </section>
 <section class="sec company" id="company">
   <div class="wrap co-grid">
-    <div class="co-img reveal left"><div class="co-photo"><img src="images/photos/grooming-pets.jpg" alt="A dog and a cat with Wash &amp; Whiskers grooming products" loading="lazy"></div>
+    <div class="co-img"><div class="co-photo"><img src="images/photos/grooming-pets.jpg" alt="A dog and a cat with Wash &amp; Whiskers grooming products" loading="lazy"></div>
       <div class="co-badge"><b>S Labs</b><span>Clean · Care · Comfort</span></div></div>
-    <div class="co-copy reveal right">
+    <div class="co-copy">
       <span class="eyebrow">About the Company</span>
       <h2 class="h2">Building better brands for everyday living</h2>
       <p class="lead">S Labs is a consumer innovation company creating purposeful, effective and accessible brands across everyday pet care and home care. We combine consumer insight, product innovation, quality and modern brand building to solve real everyday needs.</p>
@@ -307,7 +307,7 @@
     tt2.addEventListener('mouseenter', function () { clearInterval(auto); });
   }
 
-  var map = [['.about-media, .why-col.l, .range-intro > div:first-child, .faq-side', 'r-left'], ['.about-copy, .why-col.r, .range-intro .img-wrap, .faq', 'r-right'], ['.why-img, .counter, .benefit', 'r-zoom'],
+  var map = [['.about-media, .co-img, .why-col.l, .range-intro > div:first-child, .faq-side', 'r-left'], ['.about-copy, .co-copy, .why-col.r, .range-intro .img-wrap, .faq', 'r-right'], ['.why-img, .counter, .benefit', 'r-zoom'],
              ['.center, .testi-head, .blog-head, .steps-box, .step, .t-card, .post, .cta-strip, .contact-box, .partner > h2, .partner > p, .detail', '']];
   var els = [];
   map.forEach(function (m) { document.querySelectorAll(m[0]).forEach(function (el, i) {
