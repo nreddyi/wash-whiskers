@@ -1064,3 +1064,25 @@ h4, h5, .tb-item b, .counter span, .detail h3, .svc h5, .t-card h5, .post h4, .c
 /* range cards: show the whole catalogue photo */
 .svc .pic { height: auto; aspect-ratio: 1241 / 1044; }
 .svc .pic img { object-fit: cover; object-position: center; }
+
+/* =========================================================
+   PRIMARY FONT — Aldine 401 BT (brand guide 03.1)
+   Aldine 401 BT is Bitstream's Palatino. Web version: TeX Gyre Pagella
+   (Palatino-design, GUST Font License — free for web), self-hosted in /fonts.
+   If the licensed Aldine 401 BT is installed it is used first.
+   ========================================================= */
+@font-face { font-family: "Aldine Web"; src: url("../fonts/aldine-pagella-regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Aldine Web"; src: url("../fonts/aldine-pagella-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Aldine Web"; src: url("../fonts/aldine-pagella-bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Aldine Web"; src: url("../fonts/aldine-pagella-bolditalic.woff2") format("woff2"); font-weight: 700; font-style: italic; font-display: swap; }
+:root {
+  --f-serif: "Aldine401 BT", "Aldine 401 BT", "Aldine Web", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --f-primary: var(--f-serif);
+}
+/* all headings in the primary font */
+h1, h2, h3, h4, h5, h6, .h2, .ph-copy h1, .hero h1, .band2 h2, .partner h2, .cta-strip h3, .band-text h3 { font-family: var(--f-primary) !important; font-weight: 700; letter-spacing: -.01em; }
+.hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.6rem); line-height: 1.08; }
+.h2 { line-height: 1.12; }
+.co-badge b, .br-mono { font-family: var(--f-primary) !important; }
+/* secondary display font (Hobo stand-in) only for small accents */
+.counter strong, .step .no, .hwb-grid .hn, .st-card .cat { font-family: var(--f-display); }
