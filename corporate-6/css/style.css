@@ -32,9 +32,9 @@ section[id] { scroll-margin-top: 90px; }
 
 /* eyebrow with hand-drawn oval */
 .eyebrow { display: inline-block; position: relative; padding: .55rem 1.6rem; font-family: "Fredoka", sans-serif; font-weight: 600; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); }
-.eyebrow::before { content: ""; position: absolute; inset: -6px -10px; background: url("../images/oval.svg") center / 100% 100% no-repeat; }
+.eyebrow::before { content: ""; position: absolute; inset: -6px -10px; background: url("../images/oval.svg?v=2") center / 100% 100% no-repeat; }
 .eyebrow.light { color: #fff; }
-.eyebrow.light::before { background-image: url("../images/oval-yellow.svg"); }
+.eyebrow.light::before { background-image: url("../images/oval-yellow.svg?v=2"); }
 .h2 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); margin: 1.1rem 0 1rem; }
 .lead { max-width: 620px; font-size: 1.02rem; }
 .center .lead { margin-inline: auto; }
@@ -1030,3 +1030,12 @@ h4, h5, .tb-item b, .counter span, .detail h3, .svc h5, .t-card h5, .post h4, .c
 .bn-txt b { color: var(--c-teal); }
 .bn-txt small { color: rgba(0, 101, 124, .72); }
 .bn-play b { box-shadow: 0 8px 20px -10px rgba(0, 101, 124, .5); }
+/* eyebrow: oval sits around the text, not on it */
+.eyebrow { padding: .7rem 2.4rem !important; }
+.eyebrow::before { inset: -4px -6px; }
+/* step photos: full, centred */
+.step .img img { object-position: center center; }
+/* tighter gap between products and care routine */
+.products { padding-bottom: 2.5rem; }
+.products .more-row { margin-top: 2rem; }
+#approach { padding-top: 3.5rem; }
