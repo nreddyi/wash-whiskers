@@ -1116,3 +1116,7 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 .hd-pets { left: 42%; bottom: 14px; width: 190px; animation: petsBob 5s ease-in-out infinite; }
 @keyframes petsBob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 @media (max-width: 1000px) { .hd-pets { display: none; } }
+.hd-star3 { left: 40%; bottom: 70px; width: 34px; animation: twinkle 3s ease-in-out infinite .4s; }
+.hd-star4 { left: 47%; bottom: 140px; width: 22px; animation: twinkle 3s ease-in-out infinite 1.2s; }
+.hd-star5 { left: 55%; bottom: 60px; width: 28px; animation: twinkle 3s ease-in-out infinite 2s; }
+@media (max-width: 1000px) { .hd-star3, .hd-star4, .hd-star5 { display: none; } }
