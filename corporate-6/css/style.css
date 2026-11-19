@@ -1125,3 +1125,4 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 .hd-paws2 { animation-delay: 1.6s; }
 @keyframes pawStep { 0%,100% { opacity: .8; translate: 0 0; } 50% { opacity: .35; translate: 0 -6px; } }
 @media (max-width: 1000px) { .hd-paws2 { display: none; } }
+.am-main img { object-position: 100% center; }
