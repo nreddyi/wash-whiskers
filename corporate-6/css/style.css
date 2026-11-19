@@ -1136,3 +1136,7 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 .am-chip span { font-size: .78rem; color: var(--c-teal2); font-weight: 600; letter-spacing: .04em; }
 @media (max-width: 760px) { .about-media { padding: 0 0 1.5rem 0; } .about-media .am-badge { width: 92px !important; top: -1rem !important; right: -.4rem !important; } .am-chip { left: 1rem; bottom: 0; padding: .6rem .9rem; } }
 .svc .pic img { object-fit: cover; object-position: center 30%; }
+/* range cards: show each photo whole at its own proportions */
+.svc .pic { height: auto !important; aspect-ratio: auto !important; }
+.svc .pic img { height: auto !important; display: block; object-fit: initial !important; }
+.detail .dimg img { object-fit: contain !important; height: auto !important; }
