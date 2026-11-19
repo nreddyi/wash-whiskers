@@ -1126,3 +1126,12 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 @keyframes pawStep { 0%,100% { opacity: .8; translate: 0 0; } 50% { opacity: .35; translate: 0 -6px; } }
 @media (max-width: 1000px) { .hd-paws2 { display: none; } }
 .am-main img { object-position: 100% center; }
+/* About: one clean photo card */
+.about-media { height: auto !important; padding: 0 2.5rem 2.5rem 0; }
+.am-main { position: relative !important; width: 100% !important; height: auto !important; aspect-ratio: 1241 / 1210; border-radius: 36px !important; }
+.am-main img { object-fit: cover; object-position: center !important; }
+.about-media .am-badge { right: 0 !important; top: -1.5rem !important; width: 130px; }
+.am-chip { position: absolute; left: 1.5rem; bottom: 1rem; background: #fff; border-radius: 18px; padding: .8rem 1.2rem; box-shadow: 0 18px 40px -18px rgba(0,101,124,.45); display: flex; flex-direction: column; }
+.am-chip b { font-family: var(--f-serif); color: var(--c-teal); font-size: 1.1rem; }
+.am-chip span { font-size: .78rem; color: var(--c-teal2); font-weight: 600; letter-spacing: .04em; }
+@media (max-width: 760px) { .about-media { padding: 0 0 1.5rem 0; } .about-media .am-badge { width: 92px !important; top: -1rem !important; right: -.4rem !important; } .am-chip { left: 1rem; bottom: 0; padding: .6rem .9rem; } }
