@@ -1120,3 +1120,8 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 .hd-star4 { left: 47%; bottom: 140px; width: 22px; animation: twinkle 3s ease-in-out infinite 1.2s; }
 .hd-star5 { left: 55%; bottom: 60px; width: 28px; animation: twinkle 3s ease-in-out infinite 2s; }
 @media (max-width: 1000px) { .hd-star3, .hd-star4, .hd-star5 { display: none; } }
+.hd-paws2 { left: 30%; bottom: 90px; width: 90px; opacity: .8; transform: scaleX(-1); }
+.hd-paws, .hd-paws2 { animation: pawStep 3.2s ease-in-out infinite; }
+.hd-paws2 { animation-delay: 1.6s; }
+@keyframes pawStep { 0%,100% { opacity: .8; translate: 0 0; } 50% { opacity: .35; translate: 0 -6px; } }
+@media (max-width: 1000px) { .hd-paws2 { display: none; } }
