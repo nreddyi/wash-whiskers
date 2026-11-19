@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 170">
+  <!-- sitting dog -->
+  <g fill="#5CFFFB">
+    <path d="M42 165 C40 130 46 108 62 98 L100 98 C114 108 118 130 116 165 Z"/>
+    <ellipse cx="81" cy="66" rx="26" ry="28"/>
+    <path d="M114 152 C132 150 142 138 140 122 C139 114 132 112 130 120 C129 132 124 140 114 142 Z"/>
+  </g>
+  <g fill="#2FC9C6">
+    <path d="M58 44 C44 46 38 64 42 82 C44 90 52 92 56 84 C60 72 62 58 64 48 Z"/>
+    <path d="M104 44 C118 46 124 64 120 82 C118 90 110 92 106 84 C102 72 100 58 98 48 Z"/>
+  </g>
+  <g fill="#00657C">
+    <circle cx="71" cy="62" r="3.8"/><circle cx="91" cy="62" r="3.8"/>
+    <ellipse cx="81" cy="74" rx="6.5" ry="4.8"/>
+    <path d="M74 81 Q81 88 88 81" stroke="#00657C" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  </g>
+  <path d="M78 85 Q81 96 84 85 Z" fill="#F7995B"/>
+  <path d="M62 100 Q81 110 100 100" stroke="#F7995B" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="81" cy="108" r="5" fill="#F7995B"/>
+  <!-- sitting cat -->
+  <g fill="#D2FFFD">
+    <path d="M150 165 C148 132 154 112 168 102 C158 94 154 82 156 70 L152 44 L170 58 C178 54 190 54 198 58 L214 44 L212 70 C214 82 210 94 200 102 C214 112 220 134 218 165 Z"/>
+    <path d="M216 156 C238 156 250 142 246 122 C244 112 236 112 236 120 C237 136 230 146 216 146 Z"/>
+  </g>
+  <g fill="#00657C">
+    <ellipse cx="175" cy="78" rx="3.6" ry="4.6"/><ellipse cx="193" cy="78" rx="3.6" ry="4.6"/>
+    <path d="M181 88 L187 88 L184 92 Z"/>
+    <path d="M184 92 Q180 97 176 94 M184 92 Q188 97 192 94" stroke="#00657C" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M166 88 L150 85 M166 92 L150 94 M202 88 L218 85 M202 92 L218 94" stroke="#00657C" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <!-- heart between them -->
+  <path d="M134 40 C134 32 144 30 146 38 C148 30 158 32 158 40 C158 50 146 56 146 58 C146 56 134 50 134 40 Z" fill="#F7995B"/>
+</svg>

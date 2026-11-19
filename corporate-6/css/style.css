@@ -1113,3 +1113,6 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 @media (max-width: 1000px) { section.band2 > div.bn-photo { padding: 1rem 1rem 0; } .band2 .bn-photo .bn-tag { top: 2rem; left: 2rem; } }
 .band2 .bn-card { position: relative; width: 100%; }
 .band2 .bn-card .bn-tag { top: 1.2rem !important; left: 1.2rem !important; bottom: auto !important; }
+.hd-pets { left: 42%; bottom: 14px; width: 190px; animation: petsBob 5s ease-in-out infinite; }
+@keyframes petsBob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@media (max-width: 1000px) { .hd-pets { display: none; } }
