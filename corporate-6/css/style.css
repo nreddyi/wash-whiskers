@@ -1090,3 +1090,4 @@ h1, h2, h3, h4, h5, h6, .h2, .ph-copy h1, .hero h1, .band2 h2, .partner h2, .cta
 .hp-cat img, .ph-pet.r img { object-position: center 80%; }
 .hp-dog img, .ph-pet.l img { object-position: center 35%; }
 .hp-cat img, .ph-pet.r img { object-position: center 100%; }
+.hero-pet img, .hp-dog img, .hp-cat img, .ph-pet img, .ph-pet.l img, .ph-pet.r img { object-fit: cover !important; object-position: center center !important; }
