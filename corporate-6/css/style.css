@@ -1086,3 +1086,4 @@ h1, h2, h3, h4, h5, h6, .h2, .ph-copy h1, .hero h1, .band2 h2, .partner h2, .cta
 .co-badge b, .br-mono { font-family: var(--f-primary) !important; }
 /* secondary display font (Hobo stand-in) only for small accents */
 .counter strong, .step .no, .hwb-grid .hn, .st-card .cat { font-family: var(--f-display); }
+.hero-pet img { object-fit: cover; object-position: center 30%; }
