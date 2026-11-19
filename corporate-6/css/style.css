@@ -1092,14 +1092,9 @@ h1, h2, h3, h4, h5, h6, .h2, .ph-copy h1, .hero h1, .band2 h2, .partner h2, .cta
 .hp-cat img, .ph-pet.r img { object-position: center 100%; }
 .hero-pet img, .hp-dog img, .hp-cat img, .ph-pet img, .ph-pet.l img, .ph-pet.r img { object-fit: cover !important; object-position: center center !important; }
 .band2 .bn-photo img { object-position: 45% 30%; }
-/* Our Promise: show the full Shiba + cat photo as a card */
-.band2 .bn-photo { background: var(--c-mint); display: flex; align-items: center; justify-content: center; padding: 2.5rem 1rem 2.5rem 2.5rem; min-height: 0; }
-.band2 .bn-photo img { position: relative !important; inset: auto; width: 100%; height: auto !important; aspect-ratio: auto; object-fit: contain !important; border-radius: 30px; box-shadow: 0 30px 60px -30px rgba(0, 101, 124, .5); }
-.band2 .bn-photo .bn-tag { left: 4rem; bottom: 4rem; }
-@media (max-width: 1000px) { .band2 .bn-photo { padding: 1.5rem 1.2rem 0; } .band2 .bn-photo .bn-tag { left: 2.2rem; bottom: 1rem; } }
-.band2 .bn-photo { display: flex !important; }
-.bn-card { position: relative; width: 100%; }
-.band2 .bn-card .bn-tag { left: 1.4rem; bottom: 1.4rem; top: auto; }
-.band2 { align-items: stretch !important; } .band2 .bn-photo { align-self: stretch !important; height: auto !important; }
-.band2 .bn-photo { display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: center !important; }
-section.band2 > div.bn-photo { display: flex !important; flex-direction: column; justify-content: center; align-items: center; }
+/* Our Promise: full catalogue photo fills the left half */
+section.band2 > div.bn-photo { display: block !important; position: relative; padding: 0; background: none; min-height: 560px; }
+.band2 .bn-photo img { position: absolute !important; inset: 0; width: 100%; height: 100% !important; object-fit: cover !important; object-position: center 35% !important; border-radius: 0; box-shadow: none; }
+.band2 .bn-photo .bn-tag { left: 1.6rem; bottom: 1.6rem; }
+@media (max-width: 1000px) { section.band2 > div.bn-photo { min-height: 520px; } }
+@media (max-width: 560px) { section.band2 > div.bn-photo { min-height: 440px; } }
