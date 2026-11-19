@@ -1107,3 +1107,9 @@ section.band2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); align-i
 section.band2 > div.bn-panel { align-items: flex-start; }
 section.band2 > div.bn-panel > .bn-steps { align-self: stretch; }
 .band2 .bn-photo .bn-tag { top: 1.6rem; bottom: auto !important; left: 1.6rem; }
+section.band2 > div.bn-photo { display: flex !important; align-items: center; justify-content: center; padding: 1.5rem 0 1.5rem 1.5rem; }
+section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px -32px rgba(0,101,124,.5); }
+.band2 .bn-photo .bn-tag { top: 3rem; left: 3rem; }
+@media (max-width: 1000px) { section.band2 > div.bn-photo { padding: 1rem 1rem 0; } .band2 .bn-photo .bn-tag { top: 2rem; left: 2rem; } }
+.band2 .bn-card { position: relative; width: 100%; }
+.band2 .bn-card .bn-tag { top: 1.2rem !important; left: 1.2rem !important; bottom: auto !important; }
