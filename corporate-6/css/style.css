@@ -1216,3 +1216,6 @@ section[id], .footer-wrap[id] { scroll-margin-top: 90px; }
 .br-kx img { max-height: 62px; }
 .br-card .br-mono { margin-bottom: 1.2rem; }
 .br-card { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.f-dev { margin-left: auto; color: rgba(255,255,255,.75); }
+.f-dev b { color: #fff; font-weight: 600; }
+@media (max-width: 760px) { .f-dev { margin-left: 0; } }
