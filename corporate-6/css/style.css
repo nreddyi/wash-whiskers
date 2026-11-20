@@ -1141,3 +1141,4 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 .svc .pic img { height: auto !important; display: block; object-fit: initial !important; }
 .detail .dimg img { object-fit: contain !important; height: auto !important; }
 .co-photo img { object-position: center 40% !important; }
+.br-grid { grid-template-columns: repeat(2, minmax(0, 340px)); justify-content: center; }
