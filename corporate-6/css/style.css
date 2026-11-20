@@ -1189,3 +1189,8 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 @media (max-width: 760px) { .hero-more { font-size: .88rem; margin-top: -.3rem !important; } }
 .hero-more-t { display: block; margin-top: .6rem; }
 .btn-pink, .btn-pink:hover { color: #062A33 !important; font-weight: 700; }
+/* footer: real pet portraits instead of cartoon */
+.footer-wrap .f-pets { position: absolute; left: 50%; top: -62px; transform: translateX(-50%); display: flex; z-index: 2; }
+.f-pets img { width: 116px; height: 116px; border-radius: 50%; object-fit: cover; border: 5px solid #fff; box-shadow: 0 16px 34px -16px rgba(0,101,124,.6); }
+.f-pets img + img { margin-left: -22px; }
+@media (max-width: 760px) { .footer-wrap .f-pets { top: -46px; } .f-pets img { width: 86px; height: 86px; border-width: 4px; } }
