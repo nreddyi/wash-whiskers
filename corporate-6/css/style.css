@@ -1182,3 +1182,6 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 .pc-grid { align-items: stretch !important; }
 .pc-body { flex: 1 1 auto !important; }
 .pc-link { margin-top: auto !important; }
+/* buttons with the arrow icon on the right: balanced padding, text centred with icon */
+.btn:has(> i:last-child) { padding: .45rem .45rem .45rem 1.6rem; justify-content: center; line-height: 1; }
+.btn > i { flex: none; }
