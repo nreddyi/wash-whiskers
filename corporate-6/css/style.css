@@ -1204,3 +1204,8 @@ section[id], .footer-wrap[id] { scroll-margin-top: 90px; }
 /* footer: push link columns below the pet portraits */
 @media (min-width: 1101px) { .f-grid > div:not(:first-child) { padding-top: 2.4rem; } }
 @media (min-width: 761px) and (max-width: 1100px) { .footer { padding-top: 5rem !important; } .f-grid { grid-template-columns: 1fr 1fr !important; } }
+/* KIXOFF logo */
+.bi.bi-kx, .mm-brands .bi.bi-kx { background: #fff !important; border: 1px solid #CCE0E5; padding: 5px; }
+.bi-kx img { width: 100%; height: 100%; object-fit: contain; }
+.br-card.c-orange .br-mono.br-kx { background: #fff; width: auto; height: 78px; padding: 0 .5rem; }
+.br-kx img { height: 62px; width: auto; display: block; }
