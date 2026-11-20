@@ -1200,3 +1200,4 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 .partner .pet-r { right: 6% !important; }
 @media (max-width: 1100px) { .partner .pet-l, .partner .pet-r { width: 160px !important; height: 210px; } .partner .pet-l { left: 2% !important; } .partner .pet-r { right: 2% !important; } }
 @media (max-width: 760px) { .partner { padding-bottom: 15rem !important; } .partner .pet-l, .partner .pet-r { width: 130px !important; height: 170px; top: auto; bottom: 2.2rem !important; transform: none; border-width: 4px; } .partner .pet-l { left: calc(50% - 142px) !important; } .partner .pet-r { right: calc(50% - 142px) !important; } }
+section[id], .footer-wrap[id] { scroll-margin-top: 90px; }
