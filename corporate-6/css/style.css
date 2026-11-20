@@ -1194,3 +1194,9 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 .f-pets img { width: 116px; height: 116px; border-radius: 50%; object-fit: cover; border: 5px solid #fff; box-shadow: 0 16px 34px -16px rgba(0,101,124,.6); }
 .f-pets img + img { margin-left: -22px; }
 @media (max-width: 760px) { .footer-wrap .f-pets { top: -46px; } .f-pets img { width: 86px; height: 86px; border-width: 4px; } }
+/* partner: real catalogue pets in arch frames */
+.partner .pet-l, .partner .pet-r { width: 220px !important; height: 290px; object-fit: cover; bottom: auto !important; top: 50%; transform: translateY(-50%); border-radius: 140px 140px 22px 22px; border: 6px solid #fff; box-shadow: 0 26px 50px -24px rgba(0,101,124,.55); opacity: 1 !important; }
+.partner .pet-l { left: 6% !important; object-position: 30% 30%; }
+.partner .pet-r { right: 6% !important; }
+@media (max-width: 1100px) { .partner .pet-l, .partner .pet-r { width: 160px !important; height: 210px; } .partner .pet-l { left: 2% !important; } .partner .pet-r { right: 2% !important; } }
+@media (max-width: 760px) { .partner { padding-bottom: 15rem !important; } .partner .pet-l, .partner .pet-r { width: 130px !important; height: 170px; top: auto; bottom: 2.2rem !important; transform: none; border-width: 4px; } .partner .pet-l { left: calc(50% - 142px) !important; } .partner .pet-r { right: calc(50% - 142px) !important; } }
