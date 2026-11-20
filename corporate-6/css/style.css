@@ -1214,3 +1214,5 @@ section[id], .footer-wrap[id] { scroll-margin-top: 90px; }
 .br-mono.br-kx, .br-mono.br-ww { max-width: 100%; }
 .br-kx img, .br-ww img { max-width: 100%; height: auto; max-height: 76px; object-fit: contain; }
 .br-kx img { max-height: 62px; }
+.br-card .br-mono { margin-bottom: 1.2rem; }
+.br-card { display: flex; flex-direction: column; align-items: center; justify-content: center; }
