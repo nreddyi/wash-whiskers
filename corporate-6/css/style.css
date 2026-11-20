@@ -1142,3 +1142,28 @@ section.band2 > div.bn-photo img { border-radius: 28px; box-shadow: 0 30px 60px 
 .detail .dimg img { object-fit: contain !important; height: auto !important; }
 .co-photo img { object-position: center 40% !important; }
 .br-grid { grid-template-columns: repeat(2, minmax(0, 340px)); justify-content: center; }
+/* ===== Products: new boutique-card style (no prices) ===== */
+.products { background: linear-gradient(180deg, #F2FFFE 0%, #fff 60%); }
+.pf-tabs { background: #fff; border-radius: 100px; padding: .45rem; box-shadow: 0 14px 40px -24px rgba(0,101,124,.45); width: fit-content; max-width: 100%; gap: .3rem; }
+.pf-btn { border: 0; background: transparent; padding: .6rem 1.1rem; }
+.pf-btn:hover { background: var(--c-mint); }
+.pc-grid { gap: 1.8rem; }
+.pc { border: 0; border-radius: 28px; background: #fff; box-shadow: 0 24px 50px -34px rgba(0,101,124,.55); padding: .7rem; }
+.pc-img { height: 270px; border-radius: 22px; background: radial-gradient(circle at 50% 60%, #fff 0 35%, #D2FFFD 70%); }
+.pc-img img { padding: .9rem !important; mix-blend-mode: multiply; }
+.pc:nth-child(4n+2) .pc-img { background: radial-gradient(circle at 50% 60%, #fff 0 35%, #DEEEF7 70%); }
+.pc:nth-child(4n+3) .pc-img { background: radial-gradient(circle at 50% 60%, #fff 0 35%, #FDEBDF 70%); }
+.pc:nth-child(4n+4) .pc-img { background: radial-gradient(circle at 50% 60%, #fff 0 35%, #E4F0E7 70%); }
+.pc-pet { top: .9rem; left: .9rem; border-radius: 10px; font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.pc-body { padding: 1.1rem .8rem .5rem; text-align: center; align-items: center; }
+.pc-body h4 { font-size: 1.18rem; }
+.pc-sub { color: var(--c-teal2); font-size: .82rem; }
+.pc-body p { font-size: .84rem; -webkit-line-clamp: 2; }
+.pc-ing { display: none; }
+.pc-sz { justify-content: center; gap: .35rem; }
+.pc-sz li { border: 0; background: var(--c-mint); color: var(--c-teal); border-radius: 100px; padding: .3rem .8rem; font-size: .76rem; }
+.pc-sz b { font-weight: 700; }
+.pc-link { margin: .9rem 0 .2rem; padding: .7rem 1.4rem; border-radius: 100px; background: var(--c-teal); color: #fff !important; justify-content: center; width: 100%; transition: background .3s; }
+.pc-link:hover { background: var(--c-orange); }
+.pc-link svg { color: #fff; }
+@media (max-width: 560px) { .pf-tabs { border-radius: 20px; } .pc { padding: .45rem; border-radius: 20px; } .pc-img { height: 160px; border-radius: 16px; } .pc-body { padding: .7rem .3rem .3rem; } .pc-body h4 { font-size: .95rem; } .pc-link { padding: .55rem .8rem; font-size: .78rem; } }
